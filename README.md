@@ -23,11 +23,11 @@ Usamos el entorno de desarrollo **PlatformIO** por su integración moderna con *
 
 ## Microcontrolador utilizado
 
-![ESP32](documentation/ESP32-WROOM32.jpg)
+![ESP32](documents/ESP32-WROOM32.jpg)
 
 ## Pinout de referencia
 
-![Pinout del ESP32](documentation/pinout.png)
+![Pinout del ESP32](documents/pinout.png)
 
 
 ## Instalación de Visual Studio Code y PlatformIO
