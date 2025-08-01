@@ -123,7 +123,8 @@ Archivo de **configuración del entorno PlatformIO**. Aquí defines la plataform
 [env:esp32dev]
 platform = espressif32
 board = esp32dev
-framework = arduino
+framework = espidf
+upload_port = /dev/ttyUSB0
 monitor_speed = 115200
 ```
 
@@ -163,7 +164,19 @@ Este bloque define la configuración necesaria para compilar, cargar y depurar u
      ```bash
      ls /dev/ttyUSB*
      ```
+6. **`monitor_speed = 115200`**  
+   Define la **velocidad de comunicación del monitor serial** en baudios (bits por segundo).  
+   Este valor debe coincidir con el definido en tu código fuente (por ejemplo, en `Serial.begin(115200)` para Arduino o en la configuración de UART para ESP-IDF).  
+   
+   Algunas consideraciones importantes:
+   - **115200** es el valor más común para ESP32, ya que ofrece un buen equilibrio entre velocidad y estabilidad.
+   - Velocidades más altas como **921600** son posibles en ESP32, pero pueden causar errores si el cable USB, el conversor UART o el sistema operativo no las soportan bien.
+   - Si ves **caracteres ilegibles o corruptos** en la terminal, es probable que el `monitor_speed` no coincida con el valor configurado en el firmware.
+   - Este parámetro es utilizado por PlatformIO para abrir el monitor serial (`pio device monitor`) con la velocidad adecuada.
 
+   Puedes modificar este valor si tu código usa un baud rate distinto, por ejemplo:
+   ```ini
+   monitor_speed = 9600
 
 
 ## Dependencias

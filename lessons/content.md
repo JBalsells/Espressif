@@ -80,6 +80,7 @@
 
 ## 8. Temas avanzados
 -   **Interrupciones**
+-   **Temporizadores**
 
 ---
 
