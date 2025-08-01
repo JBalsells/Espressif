@@ -30,6 +30,27 @@ El **ESP32** es un microcontrolador de bajo costo y alto rendimiento desarrollad
 2. Abre VS Code y dirígete a la sección de extensiones.
 3. Busca e instala **PlatformIO IDE**.
 
+### Instalación de Visual Studio Code y PlatformIO
+
+#### 1. Instalar Visual Studio Code
+
+- Descargar desde el sitio oficial: [https://code.visualstudio.com/](https://code.visualstudio.com/)
+- Disponible para **Windows**, **macOS** y **Linux**.
+- Instalar como cualquier otra aplicación.
+
+#### 2. Instalar PlatformIO en Visual Studio Code
+
+1. Abrir Visual Studio Code.
+2. Ir a la pestaña de **Extensiones** (icono de cuadrados en la barra lateral izquierda o presionar `Ctrl+Shift+X`).
+3. Buscar `PlatformIO IDE`.
+4. Hacer clic en **Instalar**.
+5. Esperar unos minutos mientras se descargan las dependencias necesarias (Python, toolchains, etc.).
+
+#### 3. Verificar instalación
+
+- Una vez instalado, aparecerá un ícono de PlatformIO (una hormiga) en la barra lateral izquierda.
+- Desde ahí puedes crear nuevos proyectos, importar ejemplos y configurar placas Espressif como ESP32 o ESP8266.
+
 ---
 
 ## Crear un nuevo proyecto en PlatformIO
